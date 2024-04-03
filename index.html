@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistive Communication App - Speed Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Assistive Communication App - Speed Text</h1>
+        <nav>
+            <a href="settings.html" class="menu-button" aria-label="Settings">Settings</a>
+            <a href="sms.html" class="menu-button" aria-label="Message">Message</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section aria-labelledby="contact-section">
+            <h2 id="contact-section">Select a Contact</h2>
+            <div id="contacts-interface" class="list">
+                <!-- Contacts populated here -->
+            </div>
+        </section>
+        
+        <section aria-labelledby="category-section">
+            <h2 id="category-section">Select a Category</h2>
+            <div id="categories-interface">
+                <!-- Categories populated here -->
+            </div>
+        </section>
+        
+        <section aria-labelledby="message-section">
+            <h2 id="message-section">Select a Message</h2>
+            <div id="messages-interface">
+                <!-- Messages populated here -->
+            </div>
+        </section>
+
+        <div id="selected-info" role="complementary">
+            <!-- Selected information will be dynamically added here -->
+        </div>
+        <button id="send-button" aria-label="Send Message">Send Message</button>
+    </main>
+
+    <script src="sms.js"></script>
+</body>
+</html>
