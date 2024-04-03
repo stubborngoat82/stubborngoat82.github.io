@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        fetch('http://127.0.0.1:3005/send-sms', {
+        fetch('https://subtle-rat-free.ngrok-free.app/send-sms', {
             method: 'POST',
             headers: {
                 'Content-Type':'application/json',
